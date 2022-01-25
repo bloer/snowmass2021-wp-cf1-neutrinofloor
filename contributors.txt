@@ -1,0 +1,76 @@
+# Defining the neutrino floor
+(Vetri Velan, Xin Xiang, )
+
+Ciaran A. J. O’Hare
+https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.127.251802
+
+
+# Theory Motivation
+Scope:
+- 
+
+(Tim Tait discussion with Rick Gaitskell - suggested names)
+Graciela Gelmini, 1
+Rouven Essig, 2
+Liam Fitzpatrick, 
+Kathryn Zurek, 
+Tien-tien Yu (also CF1 convener) 
+Tim Tait (willing to be consulted also)
+Volodymyr Takhistov <volodymyr.takhistov@ipmu.jp> (also interested in neutrino floor section)
+
+# Experimental Sensitivity
+- 1 paragraph brief overview of your detection principle with optional figure.  Achieved or planned exposure and threshold for currently-funded or mature proposal experiments (experiments which would complete data / taking by ~2030). 
+- Provide data files for most sensitive published limits and predicted sensitivity by 2030
+- For the expected exposure by 2030, how many solar and atmospheric neutrino events are predicted in the signal region?
+- 2-3 paragraphs: what challenges need to be overcome in order to build the next generation of this technology (x10 increase in sensitivity or sensitivity limited by neutrinos)? Of these challenges, describe possible methods to overcome. E.g., is the issue easily solvable with sufficient funds, are there promising R&D avenues or new technologies that need to be matured, or are there no proposed solutions at this time? Estimate the required resources (cost, time, manpower, computation) for critical R&D. Roughly estimate the construction cost of the next generation experiment. 
+- contact lead and provide list of names
+
+## Prospects For Reaching the Neutrino Fog
+### Currently funded sensitivity - 
+- Xe 
+    - Xenon nT( Luca Grandi*)
+    - LZ (Vetri Velan, Alden Fan*, Kim Palladino, Dan McKinsey??,Dan Akerib, Sally Shaw, Scott Hertel, Alissa Monte, , Scott Haselschwardt, Madan Timalsina, David Woodward, Ibles Olcina, Kaixuan Ni,ME Monzani )
+    - PandaX
+- GADMC/DarkSide-20k: Graham Giovanetti*, Paolo Agnes, Bianca Bottino, Mark Boulay, Davide Franco, Andrew Renshaw, Claudio Savarese, Shawn Westerdale
+- Bubble chambers (Andrew Sonnenschein, Carsten Kraus?, )
+- Solid state (CDMS, EDELWEISS, CRESST) (Francisco Ponce, David Cerdeno, 
+- CCDs (Juan Estrada?, Rouven Essig?)
+- NaI (WP6?)
+- NEWS-G (WP2?)
+LIST - https://docs.google.com/spreadsheets/d/1QF-Swip04gRq3VTCDiF7tESSfr6620eVgYvvrOGtXfk/edit#gid=0 
+
+
+### Tech in the R&D stage
+- scintillating bubble chambers (Eric Dahl, Dan Baxter)
+- supercooled (Matthhew Szydagis)
+- DUNE (Chris Jackson)
+- hydrogen-doped xenon?
+
+
+### R&D to reach the neutrino fog
+- Xe (DARWIN?) Rafael Lang
+- GADMC/Argo: Graham Giovanetti*, Paolo Agnes, Bianca Bottino, Mark Boulay, Davide Franco, Andrew Renshaw, Claudio Savarese, Shawn Westerdale
+- Solid State (CDMS: Sunil)
+- CCDs?
+- Bubble chambers
+- NaI?
+
+## New Technologies
+### Directional Detectors
+- gas detectors
+- prospects for directional detection in liquid TPCs, other liquid/solid state? (Jeff Martoff, Luca Pagani)
+### Annual modulation
+- systematics limiting currently mature technologies
+
+## EFT couplings
+(Wick Haxton?, David Cerdeno*)
+
+
+
+
+Liang Yang
+Alexander Kish
+John Orrell
+Aditya Parikh
+Sam McDermott
+Dipan Sengupta

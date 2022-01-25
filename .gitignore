@@ -1,0 +1,13 @@
+### Latex
+*.dvi
+*.fls
+*.aux
+*.log
+*.fdb_*
+*.out
+*.blg
+*.bbl
+*eps-converted-to.pdf
+
+### More...
+mainNotes.bib

@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+
+% SNOWMASS LINKS
+% https://snowmass21.org/cosmic/dm_particle
+%
+%
+%
+
+\usepackage[utf8]{inputenc}
+\usepackage{charter}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage[sort&compress,numbers]{natbib}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{todonotes}
+\usepackage[total={6.5in,9in},top=1in,headsep=0.1in,headheight=1in]{geometry}
+
+% Snowmass ``branding''
+\newcommand\snowmass{
+\begin{center}
+  \rule[-0.2in]{\hsize}{0.01in}\\
+  \rule{\hsize}{0.01in}\\
+  \vskip 0.1in
+  Submitted to the Proceedings of the US Community Study\\ 
+  on the Future of Particle Physics (Snowmass 2021)\\
+ 
+  \rule{\hsize}{0.01in}\\
+  \rule[+0.2in]{\hsize}{0.01in}\\[-2em]
+\end{center}
+}
+
+% Using `background` since headers are mangled by long author lists
+\usepackage[firstpage=true]{background}
+\backgroundsetup{contents={\parbox{6.5in}{\snowmass}}, scale=1,placement=top,opacity=1,color=black,position={3.25in,1.2in}}
+
+\usepackage{fancyhdr}
+% First page (nothing; use background)
+\fancypagestyle{plain}{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf{}%
+  \fancyhead[C]{}
+  \fancyfoot[C]{\thepage}
+}
+
+% Subsequent pages (title in header)
+\fancypagestyle{empty}{%
+  \fancyhf{}%
+  \fancyhead[C]{{\it Snowmass2021 Cosmic Frontier Direct Detection to the Neutrino Floor}}
+  \fancyfoot[C]{\thepage}
+}
+\pagestyle{empty}
+
+% Title, date, and authors
+\title{Snowmass2021 Cosmic Frontier \\ Direct Detection to the neutrino floor}
+\date{}
+
+\usepackage{authblk}
+\renewcommand\Authfont{\small}
+\renewcommand\Affilfont{\scriptsize}
+
+\author[1]{Author One}
+\author[1,2]{Author Two}
+\author[3]{Author Three}
+ 
+\affil[1]{Affiliation One}
+\affil[2]{Affiliation Two}
+\affil[3]{Affiliation Three}
+
+% Long author lists can be formatted and imported
+% Feel free to list additional authors/endorser at the end of the document
+%\input{authors.tex}
+
+\begin{document}
+
+\maketitle
+
+\input{abstract}
+
+\tableofcontents
+
+
+% Body of the text
+\input{intro}
+\input{neutrinofloor}
+\input{theory}
+\input{experiment}
+\input{conclusion}
+
+\appendix
+\section{Table of recent, active, and planned experiments}
+
+% Body of the text
+
+% References
+\bibliographystyle{unsrt}
+\bibliography{references.bib}
+
+\end{document}
+
