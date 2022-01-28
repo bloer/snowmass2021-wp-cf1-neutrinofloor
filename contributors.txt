@@ -1,5 +1,11 @@
+*: first choice for section lead
+^: contacted, not yet confirmed
++: confirmed lead
+~: rejected lead
+
+
 # Defining the neutrino floor
-(Vetri Velan, Xin Xiang, )
+(Vetri Velan^, Xin Xiang, )
 
 Ciaran A. J. O’Hare
 https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.127.251802
@@ -10,8 +16,8 @@ Scope:
 - 
 
 (Tim Tait discussion with Rick Gaitskell - suggested names)
-Graciela Gelmini, 1
-Rouven Essig, 2
+Graciela Gelmini^,
+Rouven Essig, 
 Liam Fitzpatrick, 
 Kathryn Zurek, 
 Tien-tien Yu (also CF1 convener) 
@@ -28,27 +34,27 @@ Volodymyr Takhistov <volodymyr.takhistov@ipmu.jp> (also interested in neutrino f
 ## Prospects For Reaching the Neutrino Fog
 ### Currently funded sensitivity - 
 - Xe 
-    - Xenon nT( Luca Grandi*)
-    - LZ (Vetri Velan, Alden Fan*, Kim Palladino, Dan McKinsey??,Dan Akerib, Sally Shaw, Scott Hertel, Alissa Monte, , Scott Haselschwardt, Madan Timalsina, David Woodward, Ibles Olcina, Kaixuan Ni,ME Monzani )
-    - PandaX
-- GADMC/DarkSide-20k: Graham Giovanetti*, Paolo Agnes, Bianca Bottino, Mark Boulay, Davide Franco, Andrew Renshaw, Claudio Savarese, Shawn Westerdale
-- Bubble chambers (Andrew Sonnenschein, Carsten Kraus?, )
-- Solid state (CDMS, EDELWEISS, CRESST) (Francisco Ponce, David Cerdeno, 
-- CCDs (Juan Estrada?, Rouven Essig?)
+    - Xenon nT( Luca Grandi^)
+    - LZ (Vetri Velan, Alden Fan^, Kim Palladino, Dan McKinsey??,Dan Akerib, Sally Shaw, Scott Hertel, Alissa Monte, , Scott Haselschwardt, Madan Timalsina, David Woodward, Ibles Olcina, Kaixuan Ni,ME Monzani )
+    - PandaX (Xiangdong Ji^)
+- GADMC/DarkSide-20k: Graham Giovanetti^, Paolo Agnes, Bianca Bottino, Mark Boulay^, Davide Franco, Andrew Renshaw, Claudio Savarese, Shawn Westerdale
+- Bubble chambers (Andrew Sonnenschein, Alan Robinson^, )
+- Solid state (CDMS, EDELWEISS, CRESST) (Francisco Ponce^, David Cerdeno, 
+- CCDs (Juan Estrada^, Rouven Essig)
 - NaI (WP6?)
 - NEWS-G (WP2?)
 LIST - https://docs.google.com/spreadsheets/d/1QF-Swip04gRq3VTCDiF7tESSfr6620eVgYvvrOGtXfk/edit#gid=0 
 
 
 ### Tech in the R&D stage
-- scintillating bubble chambers (Eric Dahl, Dan Baxter)
-- supercooled (Matthhew Szydagis)
-- DUNE (Chris Jackson)
+- scintillating bubble chambers (Eric Dahl^, Dan Baxter)
+- supercooled (Matthhew Szydagis^)
+- DUNE (Chris Jackson^)
 - hydrogen-doped xenon?
 
 
 ### R&D to reach the neutrino fog
-- Xe (DARWIN?) Rafael Lang
+- Xe (DARWIN?) Rafael Lang^
 - GADMC/Argo: Graham Giovanetti*, Paolo Agnes, Bianca Bottino, Mark Boulay, Davide Franco, Andrew Renshaw, Claudio Savarese, Shawn Westerdale
 - Solid State (CDMS: Sunil)
 - CCDs?
@@ -57,13 +63,13 @@ LIST - https://docs.google.com/spreadsheets/d/1QF-Swip04gRq3VTCDiF7tESSfr6620eVg
 
 ## New Technologies
 ### Directional Detectors
-- gas detectors
+- track-imaging detector (Sven Vahsen^)
 - prospects for directional detection in liquid TPCs, other liquid/solid state? (Jeff Martoff, Luca Pagani)
 ### Annual modulation
 - systematics limiting currently mature technologies
 
 ## EFT couplings
-(Wick Haxton?, David Cerdeno*)
+(Wick Haxton?, David Cerdeno^)
 
 
 
