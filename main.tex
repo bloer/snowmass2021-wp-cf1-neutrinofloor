@@ -10,13 +10,19 @@
 \usepackage{charter}
 \usepackage{fullpage}
 \usepackage{hyperref}
+\usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{lipsum}
-\usepackage[sort&compress,numbers]{natbib}
 \usepackage{hyperref}
+\usepackage{upgreek}
 \hypersetup{hidelinks}
 \usepackage{todonotes}
+\usepackage[hybrid]{markdown}
 \usepackage[total={6.5in,9in},top=1in,headsep=0.1in,headheight=1in]{geometry}
+\usepackage[sort&compress,numbers]{natbib}
+% switch to biblatex to shorten long author lists:
+%\input{usebiblatex}
+
 
 % Snowmass ``branding''
 \newcommand\snowmass{
@@ -48,30 +54,24 @@
 % Subsequent pages (title in header)
 \fancypagestyle{empty}{%
   \fancyhf{}%
-  \fancyhead[C]{{\it Snowmass2021 Cosmic Frontier Direct Detection to the Neutrino Floor}}
+  \fancyhead[C]{{\it Snowmass2021 Cosmic Frontier Dark Matter Direct Detection to the Neutrino Fog}}
   \fancyfoot[C]{\thepage}
 }
 \pagestyle{empty}
 
 % Title, date, and authors
-\title{Snowmass2021 Cosmic Frontier \\ Direct Detection to the neutrino floor}
+\title{Snowmass2021 Cosmic Frontier \\ Dark Matter Direct Detection to the Neutrino Fog}
 \date{}
 
 \usepackage{authblk}
 \renewcommand\Authfont{\small}
 \renewcommand\Affilfont{\scriptsize}
 
-\author[1]{Author One}
-\author[1,2]{Author Two}
-\author[3]{Author Three}
- 
-\affil[1]{Affiliation One}
-\affil[2]{Affiliation Two}
-\affil[3]{Affiliation Three}
-
 % Long author lists can be formatted and imported
 % Feel free to list additional authors/endorser at the end of the document
-%\input{authors.tex}
+\input{authors}
+
+\input{customcommands}
 
 \begin{document}
 
@@ -97,6 +97,7 @@
 % References
 \bibliographystyle{unsrt}
 \bibliography{references.bib}
+%\printbibliography
 
 \end{document}
 

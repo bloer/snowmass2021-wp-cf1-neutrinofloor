@@ -1,0 +1,27 @@
+#TODO 2/23:
+- Write introduction: Ben first draft
+  - grow mature technologies but also fund new idea
+- One plot per target with contours
+- One plot with different targets
+- SD contour 
+- exposure to reach the floor
+
+- push Graciela
+- push Cerdeno
+- get sensitivity curves
+- try to condense LXe section (Ben)
+- ask Mark about DEAP section cc Cristian Shawn
+- push Juan about CCD section
+- Alan to finish PICO section
+- globally: note where references are missing
+- edit Snowball section (Ben)
+- push Jackson re: DUNE
+- compose a few sentences about annual modulation not being a real solution, makes more sense as a signal follow-up
+- push Vahsen on directional
+
+
+
+
+Can we compress author count (et al.) in Bib format?
+
+

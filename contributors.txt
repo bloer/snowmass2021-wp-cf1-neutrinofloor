@@ -5,7 +5,7 @@
 
 
 # Defining the neutrino floor
-(Vetri Velan^, Xin Xiang, )
+(Vetri Velan~, Xin Xiang, Scott Haselschwardt, Ibles Olcina)
 
 Ciaran A. J. O’Hare
 https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.127.251802
@@ -63,7 +63,7 @@ LIST - https://docs.google.com/spreadsheets/d/1QF-Swip04gRq3VTCDiF7tESSfr6620eVg
 
 ## New Technologies
 ### Directional Detectors
-- track-imaging detector (Sven Vahsen^)
+- track-imaging detector (Sven Vahsen+, Ciaran O'Hare, Dinesh Loomba)
 - prospects for directional detection in liquid TPCs, other liquid/solid state? (Jeff Martoff, Luca Pagani)
 ### Annual modulation
 - systematics limiting currently mature technologies
@@ -80,3 +80,6 @@ John Orrell
 Aditya Parikh
 Sam McDermott
 Dipan Sengupta
+
+
+

@@ -1,0 +1,26 @@
+\usepackage[backend=biber,style=numeric,citestyle=numeric-comp,giveninits=true,isbn=false,date=year,sorting=none]{biblatex}
+% suppress `In:' from articles
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{\printtext{\bibstring{in}\intitlepunct}}}
+% ignore the number in the issue
+\AtEveryBibitem{%
+  \clearfield{number}}
+% only print URL or arxiv if no DOI
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite]{
+      \step[fieldsource=doi, final]
+      \step[fieldset=url, null]
+      \step[fieldset=eprint, null]
+    }  
+  }
+}
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite]{
+      \step[fieldsource=eprint, final]
+      \step[fieldset=url, null]
+    }  
+  }
+}
+\addbibresource{references.bib}
