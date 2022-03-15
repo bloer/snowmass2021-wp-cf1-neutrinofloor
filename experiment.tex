@@ -1,71 +1,37 @@
 \section{Experimental sensitivity}
 \label{sec:experiment}
 
-Emphasize discovery potential, not just exclusion sensitivity. May be difficult to combine predictions since some collaborations tend to use exclusion-only predictions e.g. SuperCDMS optimal interval. 
+
 
 \subsection{Prospects for reaching the neutrino fog}
-What are the challenges, R\&D needs for mature technologies to reach the neutrino floor?  Are there any new technologies sensitive to this space that can potentially overcome some of these challenges, and might be competitive with the more mature technologies with sufficient investment?
+
 \subsubsection{Currently-funded experiments and R\&D toward next generation}
 \label{sec:currentexperiments}
-
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{figures/wimp_sensitivty_cartoon.png}
-    \caption{Currently excluded generic spin-independent NR, spin-dependent NR, and ER cross sections. Projected sensitivity of near- amd medium-future experiments. Probably need ER absorption too. Current version is a cartoon and NOT indicative of experiments, labels, timescales, etc.}
-    \label{fig:si_sensitivity}
-\end{figure}
-
-%Prisca: What would be the umbrella theory here?  Perhaps that belongs in the motivation area of the introduction and we should nest the theory with the type of search (e.g. NR, ER scattering, ER absorption, Dark sector, etc) OR are you imagining that this is basically just a laundry list of what might be searched for?
 
 \paratitle{Liquid Xenon} 
 \input{experiments/allxenon}
 
 \paratitle{Liquid Argon} 
-\input{experiments/deap}
-%\input{experiments/darkside}
 \input{experiments/gadmc}
 
 \paratitle{Solid State} 
 \input{experiments/cdms}
-\input{experiments/ccds}
 
-\paratitle{Freon Bubble Chambers} 
+\paratitle{Bubble Chambers} 
 \input{experiments/pico}
 
-\paratitle{Liquid-Noble Bubble Chambers} 
 \input{experiments/sbc}
 
 \subsubsection{New technologies}
+
+
 \paratitle{Super-cooled detectors} 
 \input{experiments/snowball}
-\paratitle{Low Background DUNE module} 
+\paratitle{Low Background DUNE-like module} 
 \input{experiments/dune}
 \paratitle{Giant gas TPCs in pressurized caverns}
 \input{experiments/highpressure}
 
 \subsection{New technologies to push below the neutrino fog}
 \label{sec:beyondnufog}
-\subsubsection{Motivation for Directional Detection}
-
-% the following could also be used as a more general intro earlier in the paper? [--Sven]
-% \subsubsection{Counting excess, annual modulation, and directional dipole}
-
-There are three predicted nuclear recoil signatures of particle dark matter. 1) An excess in the observed nuclear recoil rate over the predicted background from radioactive impurities and neutrino scattering. 2) an annual modulation in the nuclear recoil rate and energy spectrum due to the motion of the earth around the sun. 3) A fixed dipole-shaped angular recoil distribution in galactic coordinates, resulting from the motion of the galactic disk with respect to the dark matter halo. In a terrestrial detector, this effect is seen as a DM wind, with a direction that oscillates due to the large tilt angle between the earth's spin axis and the luminous plane of the Milky Way (and solar motion), see Fig.~\ref{directional_signature}. A direct detection experiment can pursue one or several of these signatures.
-
-\begin{figure}[!htbp]
-\begin{center}
-\includegraphics[width=0.99\columnwidth]{figures/Skymaps_extended.pdf}
-\caption{The directional DM signature provides strong discrimination against solar neutrino backgrounds. Top: Expected recoil distribution in galactic coordinates. Fluorine recoils from 9~GeV DM particles (blue) form a dipole distribution that always points back to the constellation Cygnus, while the peak of the solar neutrino recoil distribution (red) moves along the Ecliptic throughout the year. Bottom: In lab coordinates, the directional DM and neutrino recoil distributions oscillate out of phase. Figure adapted from Ref.~\cite{Vahsen:2021gnb}}\label{directional_signature}
-\end{center}
-\end{figure}
- 
-
-Most leading direct detection experiments to date, such as the liquid noble gas detectors described above, have primarily aimed to detect Signature 1. This strategy has been highly successful for achieving large exposures at manageable costs, and only a few events are required for a clear detection if the detector remains background free. This method will have reduced sensitivity once exposures reach irreducible backgrounds such as the neutrino fog, or if the background level cannot be reliably predicted. Signature 2 was used by DAMA/LIBRA~\cite{Bernabei:2019ajy} to claim detection of dark matter. This signature can be used even in the presence of backgrounds, but requires exquisite detector stability and a large number (1000s) of observed DM events to detect the relatively small (few-percent-level) modulation magnitude. One important complication is that systematic effects such as temperature and cosmic ray rates also have an annual modulation, casting doubt on any claim of discovery using this signature. Signature 3 requires detectors capable of reconstructing the directions of low-energy nuclear recoils, which is not required for Signatures 1 and 2. Detecting these directions generally requires more complex detectors, increasing cost per unit of exposure. On the other hand, because the majority of recoils are expected to point to a single hemisphere in galactic coordinates, the effect is large, so that few detected DM events are required. Neither radio-impurities nor solar neutrinos can mimic the dipole signature expected from dark matter~\cite{OHare:2015utx}. Being large in magnitude and experimentally robust, the directional dipole signature is the ``smoking gun" signature required to clearly demonstrate that an excess over background in a direct DM detector originates from the galactic halo.
-
-Note that all three methods implicitly rely on the existence of a dark matter halo and $\sim 300$ km/s DM wind when they project and set limits. Moreover the alignment of the dipole is very precisely known thanks to modern astronomical data~\cite{GaiaDR2_disk}. Also note that Signature 3, when viewed in lab coordinates as a large directional oscillation (Fig.~\ref{directional_signature}, bottom), cannot result unintentionally from systematics such as daily temperature fluctuations, because the DM oscillation follows the sidereal day rather than the solar day. That means systematics such as daily temperature and cosmic ray rate fluctuations would oscillate at a different frequency than the DM signal, with the phase difference of the true DM signal and such oscillating backgrounds reaching 180 degrees in six months.
-
 \input{experiments/directional}
-
-
-
-\input{eft}

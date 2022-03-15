@@ -1,0 +1,94 @@
+% \begin{sidewaystable}
+%
+% The entries for the table are in the following Google Sheet
+% Updates should be made in the spreadsheet and then exported as CSV
+%  https://docs.google.com/spreadsheets/d/1QF-Swip04gRq3VTCDiF7tESSfr6620eVgYvvrOGtXfk/edit#gid=1929291461
+%
+% Uses this website to convert .csv to LaTeX
+%  https://tableconvert.com/csv-to-latex 
+%
+
+\begin{table}[!ht]
+    \centering
+    \tiny
+    \begin{tabular}{|l|l|l|l|l|l|l|l|}
+    \hline
+        Name & Detector & Target & Active Mass & Location of Experiment & Status & Start\_Ops & End\_Ops \\ \hline
+        ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+        XMASS & Scintillator & LXe & 832 kg & Kamioke & Ended & 2010 & 2019 \\ \hline
+        XENON10 & TPC & LXe & 62 kg & LNGS & Ended & 2006 & 2008 \\ \hline
+        XENON100 & TPC & LXe & 62 kg & LNGS & Ended & 2012 & 2016 \\ \hline
+        XENON1T & TPC & LXe & "1,995 kg" & LNGS & Ended & 2017 & 2019 \\ \hline
+        XENON1T (Ionization) & TPC Ioniz.-only & LXe & "1,995 kg" & LNGS & Ended & 2017 & 2019 \\ \hline
+        XENONnT & TPC & LXe & "7,000 kg" & LNGS & Construction/Run & 2021 & 2025 \\ \hline
+        LUX & TPC & LXe & 250 kg & SURF & Ended & 2013 & 2016 \\ \hline
+        LUX (Ionization) & TPC Ioniz.-only & LXe & 250 kg & SURF & Ended & 2017 & 2019 \\ \hline
+        LZ & TPC & LXe & "8,000 kg" & SURF & Construction/Run & 2021 & 2025 \\ \hline
+        PandaX-II & TPC & LXe & 580 kg & CJPL & Ended & 2016 & 2018 \\ \hline
+        PandaX-4T & TPC & LXe & "4,000 kg" & CJPL & Running & 2021 & 2025 \\ \hline
+        LZ HydroX & TPC & LXe+H2 & "8,000 kg" & SURF & R\&D & 2026 & ~ \\ \hline
+        Darwin / US G3 & TPC & LXe & "50,000 kg" & LNGS/SURF/Boulby & Planning & 2028 & 2033 \\ \hline
+        ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+        DEAP-1 & Scintilator & LAr & ~ & ~ & Ended & 2007 & 2011 \\ \hline
+        DEAP-3600 & Scintillator & LAr & "3,300 kg" & SNOLAB & Running & 2016 & 202X \\ \hline
+        DarkSide-50 & TPC & LAr & 46 kg & LNGS & Ended & 2013 & 2019 \\ \hline
+        Darkside-LM (Ionization) & TPC Ioniz.-only & LAr & 46 kg & LNGS & Ended & 2018 & 2019 \\ \hline
+        Darkside-20k & TPC & LAr & 30 t & LNGS & Planning/Construct & 2025 & 2030 \\ \hline
+        ARGO & TPC or Scintillator & LAr & 300 t & SNOLAB & Planning & 2030 & 2035 \\ \hline
+        GADMC & TPC & LAr & ~ & ~ & Planning & 2030 & ~ \\ \hline
+        ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+        DAMA/LIBRA & Scintillator & NaI & 250 kg & LNGS & Running & 2003 & ~ \\ \hline
+        ANAIS-112 & Scintillator & NaI & 112 kg & Canfranc & Running & 2017 & 2022 \\ \hline
+        COSINE-100 & Scintillator & NaI & 106 kg & YangYang & Running & 2016 & 2021 \\ \hline
+        COSINE-200 & Scintillator & NaI & 200 kg & YangYang & Construction & 2022 & 2025 \\ \hline
+        COSINE-200 South Pole & Scintillator & NaI & 200 kg & South Pole & Planning & 2023 & ? \\ \hline
+        COSINUS & Bolometer Scintillator & NaI & ? & LNGS & Planning & 2023 & ? \\ \hline
+        SABRE PoP & Scintillator & NaI & 5 kg & LNGS & Construction & 2021 & 2022 \\ \hline
+        SABRE (North) & Scintillator & NaI & 50 kg & LNGS & Planning & 2022 & 2027 \\ \hline
+        SABRE (South) & Scintillator & NaI & 50 kg & SUPL & Planning & 2022 & 2027 \\ \hline
+        ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+        CDEX-10 & Ionization (77K) & Ge & 10 kg & CJPL & Running & 2016 & ? \\ \hline
+        CDEX-100 / 1T & Ionization (77K) & Ge & 100-1000 kg & CJPL & Planning & 202X & ~ \\ \hline
+        ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+        SuperCDMS & Cryo Ionization & Ge & 9 kg & Soudan & Ended & 2011 & 2015 \\ \hline
+        CDMSLite (High Field) & Cryo Ionization & Ge & 1.4 kg & Soudan & Ended & 2012 & 2015 \\ \hline
+        CDMSLite (High Field) & Cryo Ionization & Ge & 1.4 kg & Soudan & Ended & 2012 & 2015 \\ \hline
+        CDMS-HVeV Si & Cryo Ionization HV & Si & 0.9 g & Surface Lab & Ended & 2018 & 2018 \\ \hline
+        SuperCDMS CUTE & Cryo Ionization / HV & Ge/Si & 5 kg/1 kg & SNOLAB & Running & 2020 & 2022 \\ \hline
+        SuperCDMS SNOLAB & Cryo Ionization / HV & Ge/Si & 11 kg/3 kg & SNOLAB & Construction & 2023 & 2028 \\ \hline
+        EDELWEISS III & Cryo Ionization & Ge & 20 kg & LSM & Ended & 2015 & 2018 \\ \hline
+        EDELWEISS III (High Field) & Cryo Ionization HV & Ge & 33 g & LSM & Running & 2019 & ~ \\ \hline
+        CRESST-II & Bolometer Scintillation & CaWO4 & 5 kg & LNGS & Ended & 2012 & 2015 \\ \hline
+        CRESST-III & Bolometer Scintillation & CaWO4 & 240 g & LNGS & Ended & 2016 & 2018 \\ \hline
+        CRESST-III (HW Tests) & Bolometer Scintillation & CaWO4 & ~ & LNGS & Running & 2020 & ~ \\ \hline
+        ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+        COUPP & Bubble Chamber & CF3I & 4 kg & SNOLAB / Fermilab & Ended & 2011 & 2012 \\ \hline
+        PICASSO & Superheated Droplet & C4F10 & 3 kg & SNOLAB & Ended & ~ & 2017 \\ \hline
+        PICO-2 & Bubble Chamber & C3F8 & 2 kg & SNOLAB & Ended & 2013 & 2015 \\ \hline
+        PICO-40 & Bubble Chamber & C3F8 & 35 kg & SNOLAB & Running & 2020 & ~ \\ \hline
+        PICO-60 & Bubble Chamber & "CF3I,C3F8" & 52 kg & SNOLAB & Ended & 2013 & 2017 \\ \hline
+        PICO-500 & Bubble Chamber & C3F8 & 430 kg & SNOLAB & Construction/Run & 2021 & ~ \\ \hline
+        ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+        DRIFT-II & Gas Directional & CF$_4$ & 0.14 kg & Boulby & Ended & ~ & ~ \\ \hline
+        NEWAGE-03b' & Gas Directional & CF4 & 14 g & Kamioka ~ & Running & 2013 &2023 \\ \hline
+        MIMAC & Gas Directional & CF$_4$+CHF$_3$+C$_4$H$_{10}$ & ~ & LSM (Modane) & Running & 2012& \\ \hline
+        CYGNO & Gas Directional & He + CF$_4$ & 0.5 - 1~kg & LNGS & Planning & 2024 & ~ \\ \hline
+        CYGNUS & Gas Directional & He + SF$_6$/CF$_4$ & ~ & Multiple sites & Planning & ~ & ~ \\ \hline
+        NEWS-G & Gas Drift & CH4 & ~ & LSM & Ended & 2017 & 2019 \\ \hline
+        NEWS-G & Gas Drift & CH4 & ~ & SNOLAB & Construction/Run & 2020 & 2025 \\ \hline
+        ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+        DAMIC & CCD & Si & 2.9 g & SNOLAB & Ended & 2015 & 2015 \\ \hline
+        DAMIC & CCD & Si & 40 g Si & SNOLAB & Ended & 2017 & 2019 \\ \hline
+        DAMIC100 & CCD & Si & 100 g Si & SNOLAB & Not Built & ~ & ~ \\ \hline
+        DAMIC-M & CCD Skipper & Si & 1 kg Si & LSM & Construction/Run & 2021 & 2024 \\ \hline
+        SENSEI & CCD Skipper & Si & 2 g Si & Fermilab u/g & Running & 2019 & 2020 \\ \hline
+        SENSEI & CCD Skipper & Si & 100 g Si & SNOLAB & Construction/Run & 2021 & 2023 \\ \hline
+        Oscura & CCD Skipper & Si & 10 kg Si & SNOLAB & Planning & 2024 & 2028 \\ \hline
+        SNOWBALL & Supercooled Liquid & H2O & ~ & ~ & Planning & ~ & ~ \\ \hline
+        ~ & ~ & ~ & ~ & ~ & ~ & ~ & ~ \\ \hline
+        ALETHEIA & TPC & He & ~ & China Inst. At. Energy & R\&D & ~ & ~ \\ \hline
+        TESSERACT & Cryo TES & He & ~ & LBNL & R\&D & ~ & ~ \\ \hline
+    \end{tabular}
+\end{table}
+
+% \end{sidewaystable}

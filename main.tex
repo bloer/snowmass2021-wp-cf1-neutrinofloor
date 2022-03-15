@@ -16,12 +16,19 @@
 \usepackage{hyperref}
 \usepackage{upgreek}
 \hypersetup{hidelinks}
-\usepackage{todonotes}
+\usepackage[colorinlistoftodos]{todonotes}
+\setuptodonotes{inline}
 \usepackage[hybrid]{markdown}
 \usepackage[total={6.5in,9in},top=1in,headsep=0.1in,headheight=1in]{geometry}
 \usepackage[sort&compress,numbers]{natbib}
 % switch to biblatex to shorten long author lists:
 %\input{usebiblatex}
+
+% Gaitskell
+% Allows landscape pages
+% \usepackage{lscape}
+% \usepackage{multicol}
+% \usepackage{rotating}
 
 
 % Snowmass ``branding''
@@ -73,11 +80,12 @@
 
 \input{customcommands}
 
+\setcounter{tocdepth}{2}
 \begin{document}
 
 \maketitle
-
 \input{abstract}
+\input{execsummary}
 
 \tableofcontents
 
@@ -87,17 +95,14 @@
 \input{neutrinofloor}
 \input{theory}
 \input{experiment}
-\input{conclusion}
 
 \appendix
+\newpage % Keep table on separate page
 \section{Table of recent, active, and planned experiments}
+\input{experiment-list}
 
-% Body of the text
-
-% References
-\bibliographystyle{unsrt}
+\newpage  %start bib on new page
+\bibliographystyle{jhep}
 \bibliography{references.bib}
-%\printbibliography
 
 \end{document}
-
