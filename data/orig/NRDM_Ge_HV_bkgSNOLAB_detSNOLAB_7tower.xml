@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<limit>
+   <data-source>/central/groups/golwala/osmondwen/output2/220311/txt/SNOLAB_HV_Ge_5.txt</data-source>
+   <data-comment/>
+   <data-reference/>
+   <url/>
+   <citation/>
+   <bibtex/>
+   <experiment>SNOLAB S4R1 Update</experiment>        			
+   <experiment-status>Approved</experiment-status> 		
+   <year>2022</year>
+   <result-type>Projection</result-type>
+   <measurement-type>Direct detection</measurement-type>
+   <curve-type>Upper limit</curve-type>
+   <public-status>SCDMS Private</public-status>
+   <spin-dependency>SI</spin-dependency>
+   <target-material>Ge</target-material>
+   <data-format>Text</data-format>
+   <data-values>
+0.823	1.682e-41
+0.8966	4.731e-42
+0.9767	1.573e-42
+1.064	6.269e-43
+1.159	2.894e-43
+1.263	1.467e-43
+1.376	9.492e-44
+1.499	6.349e-44
+1.633	4.694e-44
+1.779	3.515e-44
+1.938	3.012e-44
+2.111	2.608e-44
+2.299	2.355e-44
+2.505	2.169e-44
+2.729	2.083e-44
+2.973	2.165e-44
+3.239	2.187e-44
+3.528	2.282e-44
+3.843	2.422e-44
+4.187	2.658e-44
+4.561	2.864e-44
+4.969	3.018e-44
+5.413	3.177e-44
+5.897	3.394e-44
+6.424	3.481e-44
+6.998	3.519e-44
+7.624	3.631e-44
+8.306	3.69e-44
+9.048	3.877e-44
+9.857	4.164e-44
+10.74	4.385e-44
+11.7	4.673e-44
+12.74	5.019e-44
+13.88	5.33e-44
+15.12	5.611e-44
+16.48	5.918e-44
+17.95	6.208e-44
+19.55	6.471e-44
+21.3	6.791e-44
+23.2	7.094e-44
+25.28	7.575e-44
+27.54	8.019e-44</data-values>
+   <injected-signal>30	8.493e-44</injected-signal>
+   <x-rescale>1</x-rescale>
+   <x-units>GeV</x-units>
+   <y-rescale>1</y-rescale>
+   <y_units>cm^2</y_units>
+   <data-label>Scen. 5 Ge HV</data-label>
+   <legend-label/>
+   <limit-label/>
+   <limit-label-location/>
+   <color>Hue[.03, 1., .7]</color>
+   <plotbydefault>False</plotbydefault>
+</limit>

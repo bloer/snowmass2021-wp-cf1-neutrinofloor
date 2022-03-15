@@ -11,3 +11,9 @@
 
 ### More...
 mainNotes.bib
+.ipynb_checkpoints/
+__pycache__/
+*~
+*.mod
+*.o
+src/like/runDL_2D

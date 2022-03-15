@@ -1,0 +1,73 @@
+<?xml version="1.0" ?>
+<limit>
+   <data-source>/central/groups/golwala/osmondwen/output2/220311/txt/SNOLAB_HV_Si_5.txt</data-source>
+   <data-comment/>
+   <data-reference/>
+   <url/>
+   <citation/>
+   <bibtex/>
+   <experiment>SNOLAB S4R1 Update</experiment>        			
+   <experiment-status>Concept</experiment-status> 		
+   <year>2022</year>
+   <result-type>Projection</result-type>
+   <measurement-type>Direct detection</measurement-type>
+   <curve-type>Upper limit</curve-type>
+   <public-status>SCDMS Private</public-status>
+   <spin-dependency>SI</spin-dependency>
+   <target-material>Si</target-material>
+   <data-format>Text</data-format>
+   <data-values>
+0.362	6.38e-36
+0.4022	7.882e-37
+0.4468	1.682e-37
+0.4964	4.474e-38
+0.5514	1.285e-38
+0.6126	4.284e-39
+0.6805	1.956e-39
+0.7559	5.655e-40
+0.8398	8.162e-41
+0.9329	2.611e-41
+1.036	1.062e-41
+1.151	2.912e-42
+1.279	1.205e-42
+1.421	6.801e-43
+1.578	3.984e-43
+1.753	2.692e-43
+1.948	2.012e-43
+2.164	1.537e-43
+2.404	1.296e-43
+2.671	1.138e-43
+2.967	1.04e-43
+3.296	9.951e-44
+3.661	1.059e-43
+4.067	1.146e-43
+4.518	1.334e-43
+5.019	1.553e-43
+5.576	1.916e-43
+6.194	2.359e-43
+6.881	2.797e-43
+7.644	3.389e-43
+8.492	4e-43
+9.434	4.58e-43
+10.48	5.319e-43
+11.64	6.076e-43
+12.93	7.008e-43
+14.37	7.983e-43
+15.96	9.062e-43
+17.73	1.037e-42
+19.7	1.178e-42
+21.88	1.322e-42
+24.31	1.472e-42
+27.01	1.658e-42</data-values>
+   <injected-signal>30	1.855e-42</injected-signal>
+   <x-rescale>1</x-rescale>
+   <x-units>GeV</x-units>
+   <y-rescale>1</y-rescale>
+   <y_units>cm^2</y_units>
+   <data-label>Scen. 5 Si HV</data-label>
+   <legend-label/>
+   <limit-label/>
+   <limit-label-location/>
+   <color>Hue[.03, 1., .7]</color>
+   <plotbydefault>False</plotbydefault>
+</limit>

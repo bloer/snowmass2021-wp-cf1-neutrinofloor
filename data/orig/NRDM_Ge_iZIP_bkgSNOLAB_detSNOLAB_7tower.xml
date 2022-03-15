@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<limit>
+   <data-source>/central/groups/golwala/coombesh/xml_S4R1/xml/Ge_iZIP_bkgSNOLAB_detSNOLAB_7tower.txt</data-source>
+   <data-comment/>
+   <data-reference/>
+   <url/>
+   <citation/>
+   <bibtex/>
+   <experiment>SNOLAB S4R1 Update</experiment>        			
+   <experiment-status>Approved</experiment-status> 		
+   <year>2022</year>
+   <result-type>Projection</result-type>
+   <measurement-type>Direct detection</measurement-type>
+   <curve-type>Upper limit</curve-type>
+   <public-status>SCDMS Private</public-status>
+   <spin-dependency>SI</spin-dependency>
+   <target-material>Ge</target-material>
+   <data-format>Text</data-format>
+   <data-values>
+0.942	1.667e-39
+1.293	4.57e-42
+1.775	3.574e-43
+2.436	1.171e-43
+3.344	4.825e-44
+4.59	2.571e-44
+6.3	9.672e-45
+8.647	3.974e-45
+11.87	2.087e-45
+16.29	1.341e-45
+22.36	1.07e-45
+30.69	9.494e-46
+42.13	9.717e-46
+57.82	1.098e-45
+79.37	1.275e-45
+108.9	1.579e-45
+149.5	2.028e-45
+205.3	2.627e-45
+281.7	3.454e-45
+386.7	4.657e-45
+530.8	6.313e-45
+728.5	8.59e-45
+1000	1.172e-44
+</data-values>
+   <x-rescale>1</x-rescale>
+   <x_units>GeV</x_units>
+   <y-rescale>1</y-rescale>
+   <y_units>cm^2</y_units>
+   <data-label>Scen. 5 Ge iZIP</data-label>
+   <legend-label/>
+   <limit-label/>
+   <limit-label-location/>
+   <color>Hue[.03, 1., .7]</color>
+   <plotbydefault>False</plotbydefault>
+</limit>

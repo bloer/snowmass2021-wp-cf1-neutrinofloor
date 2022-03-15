@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<limit>
+   <data-source>/central/groups/golwala/coombesh/xml_S4R1/xml/Si_iZIP_bkgSNOLAB_detSNOLAB_7tower.txt</data-source>
+   <data-comment/>
+   <data-reference/>
+   <url/>
+   <citation/>
+   <bibtex/>
+   <experiment>SNOLAB S4R1 Update</experiment>        			
+   <experiment-status>Concept</experiment-status> 		
+   <year>2022</year>
+   <result-type>Projection</result-type>
+   <measurement-type>Direct detection</measurement-type>
+   <curve-type>Upper limit</curve-type>
+   <public-status>SCDMS Private</public-status>
+   <spin-dependency>SI</spin-dependency>
+   <target-material>Si</target-material>
+   <data-format>Text</data-format>
+   <data-values>
+0.5542	1.787e-39
+0.7678	1.697e-41
+1.064	2.538e-42
+1.474	1.257e-42
+2.042	9.893e-43
+2.828	9.208e-43
+3.919	3.255e-43
+5.429	1.154e-43
+7.521	5.896e-44
+10.42	4e-44
+14.44	3.234e-44
+20	2.908e-44
+27.71	2.883e-44
+38.39	3.026e-44
+53.18	3.373e-44
+73.68	4.054e-44
+102.1	5.119e-44
+141.4	6.652e-44
+195.9	8.816e-44
+271.4	1.184e-43
+376.1	1.604e-43
+521	2.18e-43
+721.8	2.988e-43
+1000	4.107e-43
+</data-values>
+   <x-rescale>1</x-rescale>
+   <x_units>GeV</x_units>
+   <y-rescale>1</y-rescale>
+   <y_units>cm^2</y_units>
+   <data-label>Scen. 5 Si iZIP</data-label>
+   <legend-label/>
+   <limit-label/>
+   <limit-label-location/>
+   <color>Hue[.03, 1., .7]</color>
+   <plotbydefault>False</plotbydefault>
+</limit>
