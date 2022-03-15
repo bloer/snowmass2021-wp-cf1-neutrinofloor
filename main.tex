@@ -20,9 +20,9 @@
 \setuptodonotes{inline}
 \usepackage[hybrid]{markdown}
 \usepackage[total={6.5in,9in},top=1in,headsep=0.1in,headheight=1in]{geometry}
-\usepackage[sort&compress,numbers]{natbib}
+%\usepackage[sort&compress,numbers]{natbib}
 % switch to biblatex to shorten long author lists:
-%\input{usebiblatex}
+\input{usebiblatex}
 
 % Gaitskell
 % Allows landscape pages
@@ -102,7 +102,8 @@
 \input{experiment-list}
 
 \newpage  %start bib on new page
-\bibliographystyle{jhep}
-\bibliography{references.bib}
+%\bibliographystyle{jhep}
+%\bibliography{references.bib}
+\printbibliography
 
 \end{document}
