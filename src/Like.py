@@ -23,7 +23,8 @@ import shlex
 import subprocess
 import pprint
 
-def Floor_2D(data,filt=True,filt_width=3,Ex_crit=1e10,slope_idx=2.0):
+def Floor_2D(data,filt=True, #was True,
+             filt_width=3,Ex_crit=1e10,slope_idx=2.0):
     sig = data[1:,0]
     m = data[0,1:]
     n = size(m)
@@ -31,7 +32,7 @@ def Floor_2D(data,filt=True,filt_width=3,Ex_crit=1e10,slope_idx=2.0):
     Ex = flipud(transpose(data[1:,1:].T))
     Ex[Ex>Ex_crit] = nan
     Exmin = amin(Ex[Ex>0])
-    Ex[Ex==0] = Exmin
+    Ex[Ex==0] = nan # Exmin
     DY = zeros(shape=shape(Ex))
     for j in range(0,n):
         y = log10(Ex[:,j])
@@ -46,16 +47,18 @@ def Floor_2D(data,filt=True,filt_width=3,Ex_crit=1e10,slope_idx=2.0):
     NUFLOOR = zeros(shape=n)
     #for j in range(0,n):
     #    DY[:,j] = gaussian_filter1d(DY[:,j],filt_width)
-    for j in range(0,n):
-        for i in range(0,ns):
-            if DY[ns-1-i,j]<=-slope_idx:
-                i0 = ns-1-i
-                i1 = i0+10
-                NUFLOOR[j] = 10.0**interp(-slope_idx,DY[i0:i1+1,j],log10(sig[i0:i1+1]))
-                DY[ns-1-i:-1,j] = nan
-                break
+    
+    if False:
+        for j in range(0,n):
+            for i in range(0,ns):
+                if DY[ns-1-i,j]<=-slope_idx:
+                    i0 = ns-1-i
+                    i1 = i0+10
+                    NUFLOOR[j] = 10.0**interp(-slope_idx,DY[i0:i1+1,j],log10(sig[i0:i1+1]))
+                    DY[ns-1-i:-1,j] = nan
+                    break
     DY = -DY
-    DY[DY<slope_idx] = slope_idx
+    #DY[DY<slope_idx] = slope_idx
     return m,sig,NUFLOOR,DY
 
 def NuFloor_1event(mvals,Nuc,nths=100):

@@ -10,10 +10,10 @@ from LabFuncs import FormFactorGaussian
 from Like import runDL_2D
 #==============================================================================#
 ne = 50
-nm = 200
-n_ex = 500
-ns = 500
-ex_min = 1e-5
+nm = 300
+n_ex = 700
+ns = 700
+ex_min = 1e-8
 ex_max = 1e19
 m_vals = logspace(log10(0.1),log10(1.0e4),nm)
 #==============================================================================#
@@ -25,7 +25,7 @@ E_max = 200.0
 if sys.argv[1]=='Xe':
     Nucs = [Xe131,Xe129]
     sigma_min = 1e-45
-    sigma_max = 1e-37
+    sigma_max = 1e-36
 elif sys.argv[1]=='NaI':
     Nucs = [Na23,I127]
     sigma_min = 1e-48

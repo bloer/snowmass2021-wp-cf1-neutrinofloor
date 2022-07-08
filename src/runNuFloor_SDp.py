@@ -10,11 +10,11 @@ from LabFuncs import FormFactorGaussian
 from Like import runDL_2D
 #==============================================================================#
 ne = 50
-nm = 200
-n_ex = 500
-ns = 500
-ex_min = 1e-5
-ex_max = 1e19
+nm = 300
+n_ex = 700
+ns = 700
+ex_min = 1e-7
+ex_max = 1e18
 m_vals = logspace(log10(0.1),log10(1.0e4),nm)
 #==============================================================================#
 Flux_norm = NuFlux
@@ -24,7 +24,7 @@ E_max = 200.0
 #==============================================================================#
 if sys.argv[1]=='Xe':
     Nucs = [Xe131,Xe129]
-    sigma_min = 1e-43
+    sigma_min = 1e-45
     sigma_max = 1e-35
 elif sys.argv[1]=='Ge':
     Nucs = [Ge73]
@@ -32,8 +32,8 @@ elif sys.argv[1]=='Ge':
     sigma_max = 1e-35
 elif sys.argv[1]=='F':
     Nucs = [F19]
-    sigma_min = 1e-47
-    sigma_max = 1e-40
+    sigma_min = 1e-48
+    sigma_max = 1e-38
 elif sys.argv[1]=='NaI':
     Nucs = [Na23,I127]
     sigma_min = 1e-48
