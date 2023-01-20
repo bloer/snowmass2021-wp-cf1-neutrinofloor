@@ -9,17 +9,17 @@ from WIMPFuncs import BinnedWIMPRate,MeanInverseSpeed_SHM,C_SI
 from LabFuncs import FormFactorHelm
 from Like import runDL_2D
 #==============================================================================#
-ne = 50 # number of energy bins (anything >50 is accurate enough)
+ne = 200 # number of energy bins (anything >50 is accurate enough)
 nm = 300 # 300 # number of mass points
 n_ex = 700 #700 # number of exposure points (I wouldn't go below 250)
 ns = 700 #700 # number of cross section points (I wouldn't go below 250)
 ex_min = 1e-9 # minimum exposure
 ex_max = 1e19 # maximum exposure
-m_vals = logspace(log10(0.1),log10(1.0e4),nm) # mass points
+m_vals = logspace(log10(0.001),log10(1.0e4),nm) # mass points
 #==============================================================================#
 Flux_norm = NuFlux # See Params.py
 Flux_err = NuUnc # See Params.py
-E_th = 1.0e-4 # Threshold
+E_th = 1.0e-8 # Threshold
 E_max = 200.0 # Max recoil energy
 sigma_min = 1e-50 # Minimum cross section to scan over
 sigma_max = 1e-40 # Maximum cross section to scan over
@@ -30,6 +30,8 @@ if sys.argv[1]=='Xe':
     Nuc = Xe131
 elif (sys.argv[1])=='Ar':
     Nuc = Ar40
+elif sys.argv[1] == 'ArXe':
+    Nucs = [Xe131, Ar40]
 elif (sys.argv[1])=='CaWO4':
     Nucs = [Ca40,W184,O16]
 elif (sys.argv[1])=='F':
@@ -44,6 +46,10 @@ elif (sys.argv[1])=='Si':
     Nuc = Si28
 elif (sys.argv[1])=='NaI':
     Nucs = [Na23,I127]
+elif sys.argv[1]=='H2O':
+    Nucs = [H1,O16]
+    sigma_min = 1e-48
+    sigma_max = 1e-38
 #==============================================================================#
 if (sys.argv[1])=='CaWO4':
     f0 = 40/(40+184+4*16)
@@ -62,6 +68,17 @@ elif sys.argv[1]=='NaI':
     R_sig += f1*BinnedWIMPRate(E_th,E_max,ne,m_vals,Nucs[1],C_SI,FormFactorHelm,MeanInverseSpeed_SHM)
     R_nu = f0*BinnedNeutrinoRates(E_th,E_max,ne,Nucs[0],Flux_norm)
     R_nu += f1*BinnedNeutrinoRates(E_th,E_max,ne,Nucs[1],Flux_norm)
+elif sys.argv[1] == 'H2O':
+    f0 = 2/18
+    f1 = 16/18
+    R_sig = f0*BinnedWIMPRate(E_th,E_max,ne,m_vals,Nucs[0],C_SI,FormFactorHelm,MeanInverseSpeed_SHM)
+    R_sig += f1*BinnedWIMPRate(E_th,E_max,ne,m_vals,Nucs[1],C_SI,FormFactorHelm,MeanInverseSpeed_SHM)
+    R_nu = f0*BinnedNeutrinoRates(E_th,E_max,ne,Nucs[0],Flux_norm)
+    R_nu += f1*BinnedNeutrinoRates(E_th,E_max,ne,Nucs[1],Flux_norm)
+elif sys.argv[1] == 'ArXe':
+    R_sig = concatenate([BinnedWIMPRate(E_th,E_max,ne,m_vals,Nuc,C_SI,FormFactorHelm,MeanInverseSpeed_SHM) for Nuc in Nucs], axis=1)
+    R_nu = concatenate([BinnedNeutrinoRates(E_th,E_max,ne,Nuc,Flux_norm)
+                        for Nuc in Nucs], axis=1)
 else:
     R_sig = BinnedWIMPRate(E_th,E_max,ne,m_vals,Nuc,C_SI,FormFactorHelm,MeanInverseSpeed_SHM)
     R_nu = BinnedNeutrinoRates(E_th,E_max,ne,Nuc,Flux_norm)

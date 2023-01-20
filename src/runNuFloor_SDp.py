@@ -9,17 +9,17 @@ from WIMPFuncs import BinnedWIMPRate,MeanInverseSpeed_SHM,C_SDp
 from LabFuncs import FormFactorGaussian
 from Like import runDL_2D
 #==============================================================================#
-ne = 50
+ne = 200
 nm = 300
 n_ex = 700
 ns = 700
 ex_min = 1e-7
 ex_max = 1e18
-m_vals = logspace(log10(0.1),log10(1.0e4),nm)
+m_vals = logspace(log10(0.001),log10(1.0e4),nm)
 #==============================================================================#
 Flux_norm = NuFlux
 Flux_err = NuUnc
-E_th = 1.0e-4
+E_th = 1.0e-8
 E_max = 200.0
 #==============================================================================#
 if sys.argv[1]=='Xe':
@@ -42,12 +42,26 @@ elif sys.argv[1]=='Si':
     Nucs = [Si29]
     sigma_min = 1e-41
     sigma_max = 1e-33
+elif sys.argv[1]=='H2O':
+    Nucs = [H1,O16]
+    sigma_min = 1e-48
+    sigma_max = 1e-38
+elif sys.argv[1] == 'H':
+    Nucs = [H1]
+    sigma_min = 1e-48
+    sigma_max = 1e-38
 #==============================================================================#
 if sys.argv[1]=='NaI':
     f0 = 22/(22+127)
     f1 = 127/(22+127)
     R_sig = f0*Nucs[0].IsotopicFraction*BinnedWIMPRate(E_th,E_max,ne,m_vals,Nucs[0],C_SDp,FormFactorGaussian,MeanInverseSpeed_SHM)\
             + f1*Nucs[1].IsotopicFraction*BinnedWIMPRate(E_th,E_max,ne,m_vals,Nucs[1],C_SDp,FormFactorGaussian,MeanInverseSpeed_SHM)
+    R_nu = f0*BinnedNeutrinoRates(E_th,E_max,ne,Nucs[0],Flux_norm)\
+            +f1*BinnedNeutrinoRates(E_th,E_max,ne,Nucs[1],Flux_norm)
+elif sys.argv[1] == 'H2O':
+    f0 = 2/18
+    f1 = 16/18
+    R_sig = f0*Nucs[0].IsotopicFraction*BinnedWIMPRate(E_th,E_max,ne,m_vals,Nucs[0],C_SDp,FormFactorGaussian,MeanInverseSpeed_SHM)
     R_nu = f0*BinnedNeutrinoRates(E_th,E_max,ne,Nucs[0],Flux_norm)\
             +f1*BinnedNeutrinoRates(E_th,E_max,ne,Nucs[1],Flux_norm)
 else:
